@@ -1,0 +1,153 @@
+*{
+    margin:0px;
+    padding:0px;    
+    box-sizing: border-box;
+}
+
+
+
+/*------------------------------------------------Formulario pasar a los CSS correspondientes-------------------------------------------------*/
+
+.div-form{
+    width:100vw;
+    padding: 10px;
+}
+
+.formulario{
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 92%;
+}
+
+.contenedor-de-cada-input{
+    width: 100%;
+    margin: 9px 0px;
+    padding: 5px;
+    
+}
+
+.cada-input {
+    padding: 5px;
+    font-size: 76%;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+}
+
+.button{
+    background-color: #1259c3;
+    color: white;
+    width: 100%;
+    transition: all 450ms;
+}
+
+.button:hover{
+    background-color:#0022AA
+}
+
+.div-titulos-formulario {
+    width: 100%;
+    padding: 0 5px;
+    border: none;
+}
+
+.titulos-formulario {
+    font-size: 13px;
+    text-align: left;
+    font-family: "roboto",sans-serif;
+    font-weight: bold;
+    margin:4px;
+}
+
+.texto-radio-tipo-de-comprador {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.fieldset-ambos-radios {
+    display: flex;
+    flex-wrap: nowrap;
+    border: none;
+    padding: 0;
+    width: 100%;
+}
+
+.cada-input-radio {
+    padding: 0;
+    width: 20%;
+    margin: 0;
+}
+
+.label-flex {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.fieldset-checkbox {
+    border: none;
+    padding: 0;
+    width: 100%;
+}
+
+.label-flex-checkbox {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.seleccionar-foto-perfil-margin{
+    margin: 18px 0 0 0;
+}
+
+.fieldset-input-file {
+    display: flex;
+    justify-content: center;
+    border: none;
+    width: 90%;
+}
+
+.input-file {
+    margin: auto;
+    padding: 8px 0 8px 0;
+}
+
+.fieldset-botones {
+    display: flex;
+    flex-wrap: nowrap;
+    border: none;
+    width: 100%;
+    padding: 0; 
+}
+
+
+.button-borrar {
+    background-color: #800000;
+    color: white;
+    width: 100%;
+}
+
+.button-borrar:hover {
+    background-color: #800020
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

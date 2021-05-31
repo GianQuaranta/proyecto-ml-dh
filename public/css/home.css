@@ -1,0 +1,272 @@
+/*Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;*/
+
+
+
+*{
+    margin:0px;
+    padding:0px;    
+    box-sizing: border-box;
+}
+
+/*------------------------------------------------Main-------------------------------------------------*/
+
+p{
+    font-size:12px;
+}
+
+.titulo-de-seccion{
+    font-size:4vw;
+    text-align:left;
+    margin: 15px 0 15px 17px;
+    font-weight: bold;  
+}
+
+.precios{
+    font-size:18px;
+    width:30%;
+    font-weight: bold;
+}
+
+.descuentos{
+    font-size:16px;
+    width:70%;
+    font-weight: bold;
+}
+
+
+.div-banner-home {
+    width: 100vw;    
+    display:flex;
+}
+
+.banner-home{
+    max-width:100vw;
+    justify-content: center;
+}
+
+main{
+    background-color:#ebebeb;
+    max-width:90%;
+    margin:auto;
+}
+
+
+
+section{
+    max-width: 90vw;
+    margin:auto;
+}
+
+article{
+    background-color:#FFFFFF;
+    width: 100%;
+    height: 100%;
+    transition: all 450ms;
+}
+
+article:hover{
+    box-shadow:0px 0px 10px rgb(100,100,100);
+}
+
+.descriptionBox{
+    border-top:1px solid #ebebeb;
+    padding: 10px;
+    
+}
+
+.descripciones{
+    font-size:16px;
+    display:flex;
+    padding: 5px 0;
+    height: 0vh;
+    visibility: hidden;
+    overflow: hidden;
+    transition: all 450ms;
+}
+
+
+.descriptionBox:hover > .descripciones{
+    visibility:visible;
+    height: 10vh;
+}
+
+.article-box{
+    border-top:1px solid white; 
+    background-color:white;
+    position:relative;
+}
+
+.DescuentoYDescripcion70-30{
+    display:flex;
+    align-items:flex-end;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.tamañoImagenProducto{
+    max-width: 100%;   
+}
+
+.truck{
+    color:#39b54a;  
+    font-size:14px;
+    transform: rotate(0deg);
+    transition: all 450ms;
+}
+
+
+.contenedor-camion {
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    border:1px solid #39b54a;
+    background-color: #FFFFFF;
+    padding:5px;
+    position:absolute;
+    right:10px;
+    margin-top:-24px;
+    margin-right: 10px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    transform: rotate(0deg);
+}
+
+.truck:hover{
+    transform: rotate(-360deg);
+}
+
+.elementosVerdes{
+    color:#39b54a;
+}
+
+.segundo-section {
+    margin-bottom: 60px;
+}
+
+/*---------------------------------------------------Media Query----------------------------------------------------------------*/
+
+/*----------------1er media query--------------------*/
+@media (min-width:361px){
+
+/*----------------Main--------------------*/
+
+    main section{
+        display:flex;
+        flex-wrap: wrap;
+    }
+    
+    .descripcionNone{
+        display:flex;
+    }
+
+    /*.boxShadow{
+        box-shadow:0px 0px 10px rgb(100,100,100);
+    }*/    
+
+    section{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    article{
+        width: 45%;
+        margin: 5px
+    }
+
+    .DescuentoYDescripcion70-30{
+        width: 100%;
+    } 
+
+    .descuentos{
+        font-size:78%;
+        width:40%;
+    }
+
+    .precios{
+        font-size:89%;
+        width:30%;
+    }
+
+    .descripciones{
+        font-size:12px
+    }
+
+    .truck{
+        font-size:3vw;
+    }
+
+    .contenedor-camion {
+        width:6vw;
+        height:6vw;
+        right:0vw;
+        margin-top:-6vw;
+        max-width: 26px;
+        max-height: 26px;
+    }
+
+}
+
+/*----------------media query para poner el máximo de tamaño al camión--------------------*/
+@media (min-width: 438px){
+    .truck{
+        font-size:13px;
+    }
+
+    .contenedor-camion {
+        margin-top:-5vw;
+    }
+}
+
+
+/*----------------2da media query--------------------*/
+
+@media (min-width:500px){
+
+/*----------------Main--------------------*/
+
+.titulo-de-seccion{
+    font-size:20px;
+}
+}
+
+
+
+/*----------------3ra media query--------------------*/
+
+@media (min-width:769px){
+
+/*----------------Main--------------------*/
+
+    article{
+        width: 23%;
+        margin: 5px
+    }
+
+    .truck{
+        font-size:12px;
+    }
+
+    .contenedor-camion {
+        margin-top:-3vw;
+        width:3vw;
+        height:3vw;
+        right:1vw;
+        margin-right:-3px;
+    }
+
+}
+
+/*----------------media query 1200px width posición camión--------------------*/
+
+@media (min-width:1125px){
+    .contenedor-camion {
+        margin-top:-2vw;
+    }
+}

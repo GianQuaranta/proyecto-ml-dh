@@ -1,0 +1,144 @@
+*{
+    margin:0px;
+    padding:0px;    
+    box-sizing: border-box;
+}
+
+
+
+/*------------------------------------------------Formulario pasar a los CSS correspondientes-------------------------------------------------*/
+
+.div-form{
+    width:100vw;
+    padding: 10px;
+    height: 51vh;
+}
+
+.formulario{
+    margin:auto;
+    margin-top: 7vh;
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    max-width: 623px;
+}
+
+.contenedor-de-cada-input{
+    width: 100%;
+    margin: 9px 0px;
+    padding: 5px;
+    
+}
+
+.cada-input {
+    padding: 5px;
+    font-size: 76%;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+}
+
+.button{
+    background-color: #1259c3;
+    color: white;
+    width: 100%;
+}
+
+.button:hover {
+    background-color:#0022AA;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------Footer-------------------------------------------------*/
+
+footer{
+    text-align:center;
+}
+
+.borde{
+    border-bottom: 20px solid white;
+}
+
+
+
+
+/*---------------------------------------------------Media Query----------------------------------------------------------------*/
+
+
+@media (min-width:361px){
+/*----------------Header--------------------*/
+
+.siteNavNone{
+    display:flex;
+}
+
+
+
+/*----------------Main--------------------*/
+
+
+main section{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+
+.descipcionNone{
+    display:flex;
+}
+
+.boxShadow{
+    box-shadow:0px 0px 10px rgb(100,100,100);
+}
+
+.burguerMenu{
+    display:none;
+}
+
+
+
+/*----------------Footer--------------------*/
+
+.footerAlign{
+    text-align:center;
+    background: #000;
+}   
+
+}
+
+/*----------------2da media query--------------------*/
+
+@media (min-width:500px){
+
+    /*----------------Main--------------------*/
+    
+}
+
+/*----------------2da media query--------------------*/
+
+@media (min-width:769px){
+
+}
